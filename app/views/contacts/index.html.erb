@@ -1,9 +1,9 @@
 
 <h1>Contacts</h1>
-<%= link_to 'New Contact', new_contact_path %>
+<button><%= link_to 'New Contact', new_contact_path %></button>
 <% @contacts.each do |contact| %>
-  <h2><%= contact.name %></h2>
-  <%= link_to 'View', contact_path(contact) %>
-  <%= link_to 'Edit', edit_contact_path(contact) %>
-  <%= link_to 'Delete', contact, method: :delete %>
+  <h5><%= contact.name %></h5>
+  <button><%= link_to 'View', contact_path(contact) %></button>
+  <button><%= link_to 'Edit', edit_contact_path(contact) %></button>
+  <button><%= link_to 'Delete', contact, method: :delete %></button>
 <% end %>
