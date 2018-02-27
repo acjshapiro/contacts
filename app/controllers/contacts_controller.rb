@@ -34,6 +34,10 @@ def update
     render :edit
   end
 end
+def destroy
+  Contact.find(params[:id]).destroy
+  redirect_to contacts_path
+end
 
 private
 

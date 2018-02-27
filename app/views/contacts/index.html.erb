@@ -5,4 +5,5 @@
   <h2><%= contact.name %></h2>
   <%= link_to 'View', contact_path(contact) %>
   <%= link_to 'Edit', edit_contact_path(contact) %>
+  <%= link_to 'Delete', contact, method: :delete %>
 <% end %>
